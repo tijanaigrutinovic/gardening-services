@@ -91,7 +91,7 @@ section{
 
 .header {
    z-index: 1000;
-   background: rgba(75,92,9, 0.8);
+   background: rgba(75,92,9, 1);
    padding: 24px 0px;
    display: flex;
    align-items: center;
@@ -102,12 +102,12 @@ section{
    width: 100%;
 
    .icons {
-      display: none; // Sakrij hamburger ikonu po defaultu
-      font-size: 2.5rem;
+      display: none; 
+      font-size: 20px;
       cursor: pointer;
       color: $white;
       transition: color 0.3s ease;
-
+      width: 70px;
       &.fa-times {
          color: $yellow;
       }
@@ -122,6 +122,7 @@ section{
          color:#FFF;
          font-size: 16px;
          line-height: 24px;
+         padding: 6px 24px;
          font-family: Manrope;
          font-weight: 700;
          transition: color 0.3s ease;
@@ -133,11 +134,10 @@ section{
    }
 }
 
-// Media query for screens smaller than 900px
 @media (max-width: 900px) {
    .header {
       .icons {
-         display: block; // Prikazujemo hamburger ikonu na manjim ekranima
+         display: none; 
       }
 
       .navbar {
@@ -527,6 +527,11 @@ section{
 
 }
 
+@media (min-width:991px){
+   #menu-btn{
+      display: none;
+   }
+}
 @media (max-width:991px){
 
    html{
@@ -539,7 +544,7 @@ section{
       
       #menu-btn{
          display: inline-block;
-         width: 100%;
+         width: 70px;
       }
 
       .navbar{
@@ -575,7 +580,7 @@ section{
    background-size: cover;
    @media screen and (max-width:900px) {
       width: unset;
-      padding: 32px 16px;
+      padding: 64px 16px;
    }
    h1{
       font-family: Manrope;
@@ -799,12 +804,12 @@ section{
 }
 
 .work-item {
-   background-color: #FFFFFF; /* Bela pozadina za svaku stavku */
-   border: 1px solid #DDDDDD; /* Svetlosiva granica */
+   background-color: #FFFFFF; 
+   border: 1px solid #DDDDDD; 
    border-radius: 8px;
    margin: 15px;
-   width: calc(50% - 40px); /* Širina za dva bloka u red */
-   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Senka za dubinu */
+   width: calc(50% - 40px); 
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
    @media screen and (max-width: 900px) {
       width: 100%;
    }
@@ -884,7 +889,7 @@ section{
 }
 
 .review-card {
-   background: #FFFFFF; /* Bela pozadina za svaki komentar */
+   background: #FFFFFF; 
    border-radius: 10px;
    padding: 20px;
    box-shadow:0px 1px 2px 0px rgba(0, 0, 0, 0.06), 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
