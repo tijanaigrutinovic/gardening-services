@@ -37,11 +37,9 @@ html{
    scroll-behavior: smooth;
    scroll-padding-top: 8rem;
    overflow-x: hidden;
-
    &::-webkit-scrollbar{
       width: 1rem;
    }
-
    &::-webkit-scrollbar-track{
       background: $black;
    }
@@ -182,7 +180,6 @@ section{
    background: url(../images/home-bg.png) no-repeat;
    background-size: cover;
    background-position: center;
-
    .content{
       max-width: 70rem;
       text-align: center;
@@ -206,7 +203,6 @@ section{
 .service{
    @include grid(31rem);
    margin-bottom: 120px;
-
    .box{
       text-align: center;
       padding:2rem;
@@ -223,7 +219,6 @@ section{
          margin-bottom: 1rem;
          border-radius: 50%;
       }
-
       h3{
          font-family: Manrope;
          color: #19234a;
@@ -235,7 +230,6 @@ section{
          margin-bottom: 12px;
 
       }
-
       p{
          font-family: Manrope;
          color: #353436;
@@ -265,16 +259,12 @@ section{
 
    .content{
       flex:1 1 40rem;
-
-      
-
       .icons{
          display: flex;
          flex-wrap: wrap;
          gap:1.5rem;
          margin-bottom: 2rem;
          margin-top: 1rem;
-
          h3{
             flex:1 1 16rem;
             @include title-text(1.5rem);
