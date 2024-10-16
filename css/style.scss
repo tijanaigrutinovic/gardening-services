@@ -98,7 +98,6 @@ section{
    justify-content: center;
    position: fixed;
    width: 100%;
-
    .icons {
       display: none; 
       font-size: 20px;
@@ -110,12 +109,10 @@ section{
          color: $yellow;
       }
    }
-
    .navbar {
       display: flex;
       align-items: center;
       gap: 1rem;
-
       a {
          color:#FFF;
          font-size: 16px;
@@ -124,7 +121,6 @@ section{
          font-family: Manrope;
          font-weight: 700;
          transition: color 0.3s ease;
-
          &:hover {
             color: $yellow;
          }
@@ -137,7 +133,6 @@ section{
       .icons {
          display: none; 
       }
-
       .navbar {
          display: flex;
          flex-direction: column;
@@ -151,11 +146,9 @@ section{
          box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.5);
          transform: translateX(100%);
          transition: transform 0.3s ease;
-
          &.active {
             transform: translateX(0);
          }
-
          a {
             display: block;
             color: $white;
@@ -165,7 +158,6 @@ section{
             line-height: 28px;
             text-transform: uppercase;
             transition: color 0.3s ease;
-
             &:hover {
                color: $yellow;
             }
@@ -184,15 +176,12 @@ section{
       max-width: 70rem;
       text-align: center;
       margin:0 auto;
-
       img{
          width: 100%;
       }
-
       h3{
          @include title-text(4rem);
       }
-
       p{
          @include grap-text(1.7rem);
          padding:2rem 0;
@@ -228,7 +217,6 @@ section{
          line-height: 32px;
          margin-top: 8px;
          margin-bottom: 12px;
-
       }
       p{
          font-family: Manrope;
@@ -251,12 +239,10 @@ section{
    margin-top: 48px;
    .image{
       flex:1 1 40rem;
-
       img{
          width: 100%;
       }
    }
-
    .content{
       flex:1 1 40rem;
       .icons{
@@ -833,8 +819,7 @@ section{
    text-decoration: none;
    font-size: 12px;
    font-family: Manrope;
-   margin-top: 8px;
-   
+   margin-top: 8px;  
 }
 .contact-btn:hover{
    background-color: #F2A300;
